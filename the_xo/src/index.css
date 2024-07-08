@@ -1,0 +1,127 @@
+body {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+  background-image: url('im.pg');
+  color: #ffffff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#title-logo {
+  font-family: 'caprasimo', cursive;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+
+#players {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  padding: 0;
+  margin-bottom: 10px;
+  margin-left: 70px;
+
+
+  color: #f0f0f0;
+}
+
+.Player-name {
+  margin-right: 5px;
+  color: aqua;
+}
+
+.player-symbol {
+  font-weight: bold;
+  color: springgreen;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 50px); 
+  gap: 5px; 
+}
+
+#board li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#board li ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#board li ol li {
+  display: inline-block;
+}
+
+#board li ol li button {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  background-color: transparent;
+  border: 2px solid #0bf7ff;
+  color: #00d1e8;
+}
+
+#board li ol li button:hover {
+  background-color: #ff895a;
+  color: #f506d5;
+  cursor: pointer;
+}
+
+#board li ol li button:disabled:hover {
+  background-color: transparent;
+  color: #2104f5;
+  cursor: not-allowed;
+}
+
+#log {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#game-over {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#game-over button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#game-over button:hover {
+  background-color: #ddd;
+}
+header h1{
+  margin-left: 50px;
+}
